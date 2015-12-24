@@ -1,4 +1,7 @@
 defmodule Exq.Enqueuer do
+  @moduledoc """
+  Enqueuer public API. TODO: move this to the Enqueuer GenServer after rename?
+  """
 
   def start(opts \\ []) do
     Exq.Enqueuer.Supervisor.start_link(opts)
